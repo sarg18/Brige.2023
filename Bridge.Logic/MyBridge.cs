@@ -14,7 +14,17 @@
         {
             int count = 0;
 
+
+
+
             int n = _text[0];
+            int m = _text[1];
+
+            if (n == '*' && m== '*'  && _text.Length == 2) 
+            {
+                return "VALIDO";
+            }
+
             if (n != '*' && _text[_text.Length - 1] != '*')
             {
                 return "INVALIDO";
